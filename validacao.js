@@ -39,17 +39,25 @@ function fnValidacao(event){
     }
 
     if(campoAnoProducao.value.trim() == ""){
-        return console.log('preencha o campoanoProducao')
+        return alert('Preencha o campoAnoProducao');
     }
-
-    if(campoduracaoMinutos.value.trim() == ""){
-        return console.log('preencha o campoduracaoMinutos')
+ 
+    if(campoAnoProducao.value.length <= 1){
+        return alert ("Quantidade de caracteres minima é de 1");
+    }
+ 
+    if(campoAnoProducao.value.length >= 200){
+        return alert("Quantidade máxima de caracteres é de 200");
     }
 
     if(campodataLancamento.value.trim() == ""){
         return console.log('preenchar o campodataLancamento')
     }
 
+     if(campoduracaoMinutos.value.trim() == ""){
+        return console.log('preencha o campoduracaoMinutos')
+    }
+    
      if(campogeneroPrincipal.value.trim() == ""){
         return console.log('preenchar o campogeneroPrincipal')
     }
